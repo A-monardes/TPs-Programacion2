@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package circulo2;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author jessi
+ */
+public class main {
+    public static void main(String[] args){
+        ArrayList<Figura> figuras = new ArrayList<>();
+        
+        Rectangulo r1 = new Rectangulo (10.0, 5.0, "Rectangulo 1");
+        Rectangulo r2 = new Rectangulo (8.0, 2.0, "Rectangulo 2");
+        
+        Circulo c1 = new Circulo (10, "Circulo 1");
+        Circulo c2 = new Circulo (5, "Circulo 2");
+        
+        figuras.add(r1);
+        figuras.add(r2);
+        figuras.add(c1);
+        figuras.add(c2);
+        
+        for(Figura f : figuras){
+            f.calcularArea();
+        }
+    }
+}
